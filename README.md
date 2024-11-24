@@ -11,15 +11,22 @@
 <div class="header">
     <h1>My name is Valeriia Lomakina</h1>
     <p>
-💻 **Junior Developer passionate about creating efficient and elegant code.** 
-🎯 I focus on improving my skills in **С/C++**, **Python**, and **Unix**.  
-🌱 Currently exploring new technologies like **Django** and **SwiftUI**.  
+💻 **Junior Developer passionate about creating efficient and elegant code** 
+
+🎯 I focus on improving my skills in **С/C++**, **Python**, and **Unix**
+
+🌱 Currently exploring new technologies like **Django** and **SwiftUI**
+
 🔭 Working on projects like [JuniorSunflower](#) a jobboard for juniors and interns.
 
-### 🛠️ Tech Stack
+
+🛠️ Tech Stack
 - **Programming Languages:** C, C++, Python, Swift
+  
 - **Tools:** Git, CMake, Makefile, Django
+  
 - **Other Skills:** Linux, Virtualization, Unix Systems
+  
 </p>
 </div>
 
