@@ -9,10 +9,8 @@
 <body>
 
 <div class="header">
-    <h1>My name is Valeriia Lomakina</h1>
-    <p>
-💻 **Junior Developer passionate about creating efficient and elegant code** 
-
+<h1>💻  Junior Developer passionate about creating efficient and elegant code</h1>
+<p>
 🎯 I focus on improving my skills in **С/C++**, **Python**, and **Unix**
 
 🌱 Currently exploring new technologies like **Django** and **SwiftUI**
