@@ -8,17 +8,17 @@
 <body>
 
 <div class="header">
-<h1>💻  Junior Developer passionate about creating efficient and elegant code</h1>
+<h1>Hi i'm Valeriia and I am future backend  developer</h1>
 <p>
-🎯 I focus on improving my skills in **С/C++**, **Python**, and **Unix**
+💻 My focus is **С/C++**, **Python**, and **Unix**
 
-🌱 Currently exploring new technologies like **Django** and **SwiftUI**
+🌱 Currently exploring new technologies like **Docker**, **Django** and **SwiftUI**
 
 🔭 Working on projects like [JuniorSunflower](#) a jobboard for juniors and interns.
 
 
 🛠️ Tech Stack
-- **Programming Languages:** C, C++, Python, Swift
+- **Programming Languages:** C, C++, Python, SwiftUI
   
 - **Tools:** Git, CMake, Makefile, Django
   
