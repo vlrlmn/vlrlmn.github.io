@@ -26,22 +26,49 @@ button {
     display: none;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    padding: 10px;
-}
+/* Основные стили тела и текста уже заданы, добавим стили для меню */
 
 .menu-toggle {
+    position: absolute;
+    top: 10px; /* Расположение в верхнем углу */
+    right: 10px; /* Отступ справа */
     font-size: 24px;
     cursor: pointer;
     background: none;
     border: none;
-    color: white; /* Белый цвет иконки меню */
-    hover: grey;
+    color: white; /* Цвет иконки меню */
+    z-index: 1000; /* Убедитесь, что кнопка всегда поверх меню */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #333; /* Темный фон для меню */
+    overflow-x: hidden; /* Скрытие содержимого за пределами ширины меню */
+    transition: 0.5s; /* Плавное открытие и закрытие */
+    z-index: 999; /* Меню должно быть под кнопкой */
+}
+
+nav ul {
+    position: absolute;
+    top: 50%; /* Центрирование списка в вертикальном направлении */
+    transform: translateY(-50%);
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+nav ul li:hover {
+    background-color: #555; /* Сделать пункты меню темнее при наведении */
 }
 
 footer a {
