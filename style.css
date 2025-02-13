@@ -68,13 +68,13 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #555; /* Сделать пункты меню темнее при наведении */
+    background-color: #555;
     color: white;
 }
 
 nav ul li a {
-    color: white; /* Указываем цвет текста для ссылок */
-    text-decoration: none; /* Опционально убираем подчеркивание */
+    color: white;
+    text-decoration: none;
 }
 
 
