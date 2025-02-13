@@ -22,10 +22,6 @@ button {
     border-radius: 5px;
 }
 
-.hidden {
-    display: none;
-}
-
 .menu-toggle {
     position: absolute;
     top: 10px;
@@ -40,10 +36,10 @@ button {
 
 nav {
     position: fixed;
-    top: 0;
+    top: 40px; /* Adjusted top position */
     right: 0;
     width: 0;
-    height: 100%;
+    height: calc(100% - 40px); /* Adjusted height */
     background-color: #333;
     overflow-x: hidden;
     transition: 0.5s;
@@ -52,8 +48,7 @@ nav {
 
 nav ul {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0; /* Adjusted top position */
     width: 100%;
     list-style-type: none;
     padding: 0;
@@ -69,7 +64,6 @@ nav ul li {
 
 nav ul li:hover {
     background-color: #555;
-    color: white;
 }
 
 nav ul li a {
@@ -77,9 +71,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-
 footer a {
     margin: 0 10px;
-    color: #0077cc; /* Синий цвет для ссылок */
+    color: #0077cc; /* Blue color for links */
     text-decoration: none;
 }
