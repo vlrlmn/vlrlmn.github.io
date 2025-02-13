@@ -1,6 +1,6 @@
 # Hi there! 👋
 
-Welcome to my GitHub profile repository!  
+Welcome to my GitHub profile repository!
 
 💻 **About Me:**  
 I am a future backend developer focusing on **C/C++**, **Python**, and **Unix systems**.  
