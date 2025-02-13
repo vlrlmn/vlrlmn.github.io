@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuButton = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('nav');
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+    </header>
+    <nav class="hidden">
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div> About me </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/valeria-lomakina-software/">LinkedIn</a>
+        <a href="https://github.com/vlrlmn">GitHub</a>
+        <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq">Resume</a>
+    </footer>
+</body>
+</html>
