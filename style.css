@@ -71,6 +71,7 @@ nav ul li {
 
 nav ul li:hover {
     background-color: #555; /* Сделать пункты меню темнее при наведении */
+    color: white;
 }
 
 footer a {
