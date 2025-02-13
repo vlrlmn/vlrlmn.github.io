@@ -65,6 +65,8 @@ nav ul {
 nav ul li {
     padding: 10px 20px;
     font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 nav ul li:hover {
