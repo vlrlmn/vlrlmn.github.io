@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Portfolio page</title>
     <link rel="stylesheet" href="style.css">
-    <script>
+     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var menuButton = document.querySelector('.menu-toggle');
             var nav = document.querySelector('nav');
+        
             menuButton.addEventListener('click', function() {
-                nav.classList.toggle('hidden');
+                nav.style.width = nav.style.width === '250px' ? '0' : '250px';
             });
         });
     </script>
