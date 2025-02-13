@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuButton = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('nav');
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
