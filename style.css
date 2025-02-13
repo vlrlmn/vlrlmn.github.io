@@ -1,7 +1,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт для стиля кода */
+    background-color: #333; /* Темно-серый фон */
+    color: white; /* Белый текст */
 }
 
 header, main, footer {
@@ -14,6 +16,10 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #555; /* Чуть светлее фона для кнопок */
+    color: white; /* Белый текст на кнопках */
+    border: none;
+    border-radius: 5px; /* Скругленные углы для кнопок */
 }
 
 .hidden {
@@ -34,10 +40,11 @@ nav ul li {
     cursor: pointer;
     background: none;
     border: none;
+    color: white; /* Белый цвет иконки меню */
 }
 
 footer a {
     margin: 0 10px;
-    color: #0077cc;
+    color: #0077cc; /* Синий цвет для ссылок */
     text-decoration: none;
 }
