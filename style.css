@@ -36,10 +36,10 @@ button {
 
 nav {
     position: fixed;
-    top: 40px; /* Adjusted top position */
+    top: 40px;
     right: 0;
     width: 0;
-    height: calc(100% - 40px); /* Adjusted height */
+    height: calc(100% - 40px);
     background-color: #333;
     overflow-x: hidden;
     transition: 0.5s;
@@ -48,7 +48,7 @@ nav {
 
 nav ul {
     position: absolute;
-    top: 0; /* Adjusted top position */
+    top: 0;
     width: 100%;
     list-style-type: none;
     padding: 0;
@@ -73,6 +73,6 @@ nav ul li a {
 
 footer a {
     margin: 0 10px;
-    color: #0077cc; /* Blue color for links */
+    color: #0077cc;
     text-decoration: none;
 }
