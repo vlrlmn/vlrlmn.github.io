@@ -41,6 +41,7 @@ nav ul li {
     background: none;
     border: none;
     color: white; /* Белый цвет иконки меню */
+    hover: grey;
 }
 
 footer a {
