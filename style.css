@@ -4,9 +4,17 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
     background-color: #333;
     color: white;
-    min-height: 100vh; /* Устанавливаем минимальную высоту для body */
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* Организуем содержимое в столбик */
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    flex: 1;
 }
 
 header, main, footer {
@@ -74,18 +82,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-.headmain {
-    font-size: 24px;
-    margin: 20px 0; /* Добавляем отступы */
-}
-
-.intro-text {
-    margin: 20px; /* Отступы вокруг текста для лучшего визуального отделения */
-    line-height: 1.5; /* Улучшаем читаемость текста */
-}
-
 footer {
-    margin-top: auto; /* Автоматический отступ сверху для прижатия футера к низу */
+    margin-top: auto;
     width: 100%;
     background-color: #333;
     color: white;
@@ -95,6 +93,6 @@ footer {
 
 footer a {
     margin: 0 10px;
-    color: #0077cc; /* Синий цвет для ссылок */
+    color: #0077cc;
     text-decoration: none;
 }
