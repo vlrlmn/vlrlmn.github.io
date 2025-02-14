@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+            var menuButton = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('nav');
+            
+            menuButton.addEventListener('click', function() {
+                if (nav.style.width === '250px') {
+                    nav.style.width = '0';
+                    setTimeout(function() {
+                        nav.style.display = 'none';
+                    }, 500);
+                } else {
+                    nav.style.display = 'block';
+                    setTimeout(function() {
+                        nav.style.width = '250px';
+                    }, 10);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <button class="menu-toggle">☰</button>
-    </header>
-    <nav class="hidden">
-        <ul>
-            <li><a href="index.html">Main</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    <div class="headmain">Welcome to my portfolio page!</div>
-    <div class="intro-text">Welcome to my digital portfolio! I’m Valeriia Lomakina, 
-        a dedicated and passionate computer science student at 42AbuDhabi specializing in backend development. 
-        This space showcases a curated collection of my works, projects, and professional journey. 
-        Browse through to see my skills in action and explore the creativity and technical expertise 
-        I bring to my field. Whether you're a potential employer, a fellow professional, or simply curious, 
-        I’m glad you’re here. Let’s connect and create something incredible together!</div>
-    <main>
-        <button onclick="location.href='about.html'">About Me</button>
-        <button onclick="location.href='projects.html'">Projects</button>
-    </main>
-    <footer>
-        <a href="https://www.linkedin.com/in/valeria-lomakina-software/">LinkedIn</a>
-        <a href="https://github.com/vlrlmn">GitHub</a>
-        <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq">Resume</a>
-    </footer>
+    <div class="container">
+        <header>
+            <button class="menu-toggle">☰</button>
+        </header>
+        <nav class="hidden">
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to my portfolio page!</h1>
+        <p>Welcome to my digital portfolio! I’m Valeriia Lomakina, a dedicated and passionate computer science student at 42AbuDhabi specializing in backend development. This space showcases a curated collection of my works, projects, and professional journey. Browse through to see my skills in action and explore the creativity and technical expertise I bring to my field. Whether you're a potential employer, a fellow professional, or simply curious, I’m glad you’re here. Let’s connect and create something incredible together!</p>
+        <main>
+            <button onclick="location.href='about.html'">About Me</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+        </main>
+        <footer>
+            <a href="https://www.linkedin.com/in/valeria-lomakina-software/">LinkedIn</a>
+            <a href="https://github.com/vlrlmn">GitHub</a>
+            <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq">Resume</a>
+        </footer>
+    </div>
 </body>
 </html>
