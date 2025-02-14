@@ -2,28 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio page</title>
+    <title>Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-       document.addEventListener("DOMContentLoaded", function() {
-            var menuButton = document.querySelector('.menu-toggle');
-            var nav = document.querySelector('nav');
-            
-            menuButton.addEventListener('click', function() {
-                if (nav.style.width === '250px') {
-                    nav.style.width = '0';
-                    setTimeout(function() {
-                        nav.style.display = 'none';
-                    }, 500);
-                } else {
-                    nav.style.display = 'block';
-                    setTimeout(function() {
-                        nav.style.width = '250px';
-                    }, 10);
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -37,12 +17,12 @@
         </ul>
     </nav>
     <div class="headmain">Welcome to my portfolio page!</div>
-    <div>Welcome to my digital portfolio! I’m Valeriia Lomakina, a dedicated and passionate computer science student at 42AbuDhabi
-        specializing in backend development. This space showcases a curated collection of my works, projects, 
-        and professional journey. Browse through to see my skills in action and explore the creativity and technical 
-        expertise I bring to my field. Whether you're a potential employer, 
-        a fellow professional, or simply curious, I’m glad you’re here. 
-        Let’s connect and create something incredible together!</div>
+    <div class="intro-text">Welcome to my digital portfolio! I’m Valeriia Lomakina, 
+        a dedicated and passionate computer science student at 42AbuDhabi specializing in backend development. 
+        This space showcases a curated collection of my works, projects, and professional journey. 
+        Browse through to see my skills in action and explore the creativity and technical expertise 
+        I bring to my field. Whether you're a potential employer, a fellow professional, or simply curious, 
+        I’m glad you’re here. Let’s connect and create something incredible together!</div>
     <main>
         <button onclick="location.href='about.html'">About Me</button>
         <button onclick="location.href='projects.html'">Projects</button>
