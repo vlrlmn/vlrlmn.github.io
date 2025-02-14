@@ -4,6 +4,9 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
     background-color: #333;
     color: white;
+    min-height: 100vh; /* Устанавливаем минимальную высоту для body */
+    display: flex;
+    flex-direction: column; /* Организуем содержимое в столбик */
 }
 
 header, main, footer {
@@ -71,10 +74,18 @@ nav ul li a {
     text-decoration: none;
 }
 
+.headmain {
+    font-size: 24px;
+    margin: 20px 0; /* Добавляем отступы */
+}
+
+.intro-text {
+    margin: 20px; /* Отступы вокруг текста для лучшего визуального отделения */
+    line-height: 1.5; /* Улучшаем читаемость текста */
+}
+
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    margin-top: auto; /* Автоматический отступ сверху для прижатия футера к низу */
     width: 100%;
     background-color: #333;
     color: white;
@@ -84,10 +95,6 @@ footer {
 
 footer a {
     margin: 0 10px;
+    color: #0077cc; /* Синий цвет для ссылок */
     text-decoration: none;
-}
-
-headmain {
-    text-align: center;
-    font-size: 40px;
 }
