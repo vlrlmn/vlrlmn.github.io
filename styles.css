@@ -40,16 +40,7 @@ button {
 intro {
     font-size: 40px;
 }
-h2 {
-    font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт для имитации кода */
-    background-color: #333; /* Темный фон для блока */
-    color: #f4f4f4; /* Светлый текст для хорошего контраста */
-    padding: 10px 20px; /* Внутренние отступы для создания пространства вокруг текста */
-    border: 1px solid #555; /* Темная граница для контраста с фоном */
-    border-radius: 5px; /* Скругление углов блока */
-    display: inline-block; /* Заставляет блок быть только такой шириной, какой требует контент */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Небольшая тень для добавления глубины */
-}
+
 
 header {
     position: fixed;
