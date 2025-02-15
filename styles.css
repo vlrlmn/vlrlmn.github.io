@@ -42,8 +42,16 @@ intro {
 }
 
 h1 {
-    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace; /* Использование моноширинного шрифта для имитации кода */
+    background-color: #f4f4f4; /* Светлый фон, имитирующий фон редактора кода */
+    color: #333; /* Темный цвет текста для контраста */
+    padding: 10px 20px; /* Внутренние отступы для создания пространства вокруг текста */
+    border: 1px solid #ccc; /* Тонкая граница вокруг заголовка */
+    border-radius: 5px; /* Скругление углов для более мягкого вида */
+    display: inline-block; /* Заставляет блок быть только такой шириной, какой требует контент */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Небольшая тень для добавления глубины */
 }
+
 
 header {
     position: fixed;
@@ -82,6 +90,7 @@ nav ul li:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
 }
 
 .image {
@@ -120,4 +129,10 @@ footer a {
 
 footer a i {
     margin-right: 5px; /* Пробел между иконкой и текстом */
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-top: 30px; /* Меньший отступ для мобильных устройств */
+    }
 }
