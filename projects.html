@@ -68,7 +68,15 @@
             <p>Описание карточки 6</p>
           </div>
       </div>
-      
+      <script>
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card =&gt; {
+        card.addEventListener('click', () =&gt; {
+            card.classList.toggle('expanded');
+        });
+        });
+    </script>
     <footer>
         <a href="https://www.linkedin.com/in/valeria-lomakina-software/">LinkedIn</a>
         <a href="https://github.com/vlrlmn">GitHub</a>
