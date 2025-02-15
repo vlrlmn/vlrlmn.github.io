@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'MyCustomFont';
     background-color: #1a1a1a;
     color: white;
     display: flex;
@@ -201,4 +201,11 @@ footer a i {
     .content {
         padding-top: 30px; /* Меньший отступ для мобильных устройств */
     }
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/myfont1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
