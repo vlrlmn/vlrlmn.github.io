@@ -34,7 +34,9 @@ button {
     border: none;
     border-radius: 5px;
 }
-
+intro {
+    font-size: 40px;
+}
 header {
     position: fixed;
     width: 100%;
