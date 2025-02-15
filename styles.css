@@ -72,6 +72,10 @@ nav ul li a {
     display: inline-block; 
 }
 
+nav ul li:last-child {
+    padding-right: 50px;
+}
+
 .content {
     display: flex;
     align-items: center;
