@@ -6,7 +6,7 @@ body, html {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Make sure the body takes at least the viewport height */
+    height: 100vh; /* Убедитесь, что тело занимает хотя бы высоту окна просмотра */
 }
 
 .container {
@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    display: inline-block; /* To align icons and text */
+    display: inline-block; /* Для выравнивания иконок и текста */
 }
 
 footer {
@@ -77,10 +77,10 @@ footer {
 
 footer a {
     margin: 0 10px;
-    color: white; /* Ensure the text is white */
+    color: white; /* Обеспечение белого цвета текста */
     text-decoration: none;
 }
 
 footer a i {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px; /* Пробел между иконкой и текстом */
 }
