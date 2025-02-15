@@ -51,8 +51,6 @@ h2 {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Небольшая тень для добавления глубины */
 }
 
-
-
 header {
     position: fixed;
     width: 100%;
@@ -130,6 +128,38 @@ footer a {
 footer a i {
     margin-right: 5px; /* Пробел между иконкой и текстом */
 }
+
+/*Projects */ 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+   
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16px;
+  }
+   
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+   
+  .card h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+   
+  .card p {
+    color: #777;
+  }
 
 @media (max-width: 768px) {
     .content {
