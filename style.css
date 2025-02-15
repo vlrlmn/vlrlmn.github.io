@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #333;
+    background-color: #323741;
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #323741;
     text-align: right; /* Выравнивание элементов вправо */
     padding: 10px 20px; /* Уменьшаем отступы для шапки */
     z-index: 1000; /* Удостоверимся, что шапка всегда сверху */
@@ -93,7 +93,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #323741;
     color: white;
     text-align: center;
     padding: 10px 0;
