@@ -43,27 +43,27 @@ header {
     top: 0;
     left: 0;
     background-color: #1a1a1a;
-    text-align: right; /* Выравнивание элементов вправо */
-    padding: 10px 20px; /* Уменьшаем отступы для шапки */
-    z-index: 1000; /* Удостоверимся, что шапка всегда сверху */
+    text-align: right;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 0 -20px;
     padding: 0;
-    display: inline-block; /* Блок для горизонтального расположения списка */
+    display: inline-block;
 }
 
 nav ul li {
-    display: inline; /* Элементы списка горизонтально */
+    display: inline;
     padding: 10px 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    display: inline-block; /* Для выравнивания иконок и текста */
+    display: inline-block; 
 }
 
 .content {
