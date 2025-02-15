@@ -71,6 +71,9 @@ nav ul li:last-child {
     padding-right: 50px;
 }
 
+h1 {
+    font-size: 60px;
+}
 .content {
     display: flex;
     align-items: center;
