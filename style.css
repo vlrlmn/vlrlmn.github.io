@@ -6,7 +6,7 @@ body, html {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100vh;  /* Make sure the body takes at least the viewport height */
+    height: 100vh; /* Make sure the body takes at least the viewport height */
 }
 
 .container {
@@ -35,48 +35,27 @@ button {
     border-radius: 5px;
 }
 
-.menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    z-index: 1000;
-}
-
-nav {
+header {
     position: fixed;
-    top: 40px;
-    right: 0;
-    width: 0;
-    height: calc(100% - 40px);
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: #333;
-    overflow-x: hidden;
-    transition: 0.5s;
-    z-index: 999;
+    text-align: right; /* Выравнивание элементов вправо */
+    padding: 10px 20px; /* Уменьшаем отступы для шапки */
+    z-index: 1000; /* Удостоверимся, что шапка всегда сверху */
 }
 
 nav ul {
-    position: absolute;
-    top: 0;
-    width: 100%;
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: left;
+    display: inline-block; /* Блок для горизонтального расположения списка */
 }
 
 nav ul li {
+    display: inline; /* Элементы списка горизонтально */
     padding: 10px 20px;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-
-nav ul li:hover {
-    background-color: #555;
 }
 
 nav ul li a {
