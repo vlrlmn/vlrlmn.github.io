@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,115 +8,70 @@ body, html {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    max-width: 1200px;
-    flex-grow: 1;
-
-}
-
-
-header, footer {
-    text-align: center;
-    padding: 20px;
-}
-
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #1a1a1a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-header {
-    position: fixed;
+    flex-direction: row; /* Горизонтальное размещение дочерних элементов */
+    justify-content: center; /* Центрирование содержимого */
+    align-items: center; /* Вертикальное центрирование */
     width: 100%;
+    height: 100vh;
+}
+
+
+.background-image {
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: #1a1a1a;
-    text-align: right;
-    padding: 10px 20px;
-    z-index: 1000;
+    width: 50%;
+    height: 80%;
+    background: url('images/meee.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1; /* Убедитесь, что фон находится позади всех других элементов */
 }
 
-nav ul {
+
+.content {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+/*Menu main page*/
+.menu-large {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+
+.menu-large ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline;
-    padding: 10px 30px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: inline-block; 
-}
-
-nav ul li:last-child {
-    padding-right: 50px;
-}
-
-h1 {
-    font-family: 'MyCustomFont1';
-    font-size: 60px;
-    padding-top: 0px;
-    max-width: 80%;
-}
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'MyCustomFont2';
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-.image {
-    position: relative;
-    max-width: 80%;
-    padding-left: 20px;
-    
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-}
-
-p {
-    font-size: 20px;
-}
-.image p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 80%;
     text-align: center;
 }
 
-.text {
-    width: 60%;
+.menu-large ul li {
+    padding: 10px 0;
 }
+
+.menu-large ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 100px;
+}
+
+/* Footer */
 footer {
     position: fixed;
     left: 0;
@@ -128,49 +84,48 @@ footer {
 }
 
 footer a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a i {
     margin-right: 5px;
 }
 
-/*Projects */ 
+/*Projects*/
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     padding: 16px;
-  }
-   
-  .card {
+}
+
+.card {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     border-radius: 8px;
     overflow: hidden;
     padding: 16px;
-  }
-   
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: auto;
-  }
+}
    
-  .card h3 {
+.card h3 {
     margin-top: 16px;
     margin-bottom: 8px;
-  }
-   
-  .card p {
+}
+
+.card p {
     color: #777;
-  }
+}
 
-/*About me */
-
+/*About me*/
 .hide {
     display: none; 
 }
@@ -185,12 +140,12 @@ footer a i {
     cursor: pointer;
     display: inline-block; 
 }
-/* вид текста label при активном переключателе */
+
 .hide:checked + label {
     color: red;
     border-bottom: 0;
 }
-/* когда чекбокс активен показываем блоки с содержанием  */
+
 .hide:checked + label + div {
     display: block; 
     background: #efefef;
@@ -200,22 +155,29 @@ footer a i {
     padding: 10px; 
 }
 
-/* demo контейнер */
 .demo {
     margin: 5% 10%;
 }
 
-
-@font-face {
-    font-family: 'MyCustomFont1';
-    src:    url('fonts/myfont1.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+/*Menu general*/
+.menu-general ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
-@font-face {
-    font-family: 'MyCustomFont2';
-    src:    url('fonts/myfont2.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.menu-general nav ul li {
+    display: inline;
+    padding: 10px 30px;
+}
+
+.menu-general nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.menu-general nav ul li:last-child {
+    padding-right: 50px;
 }
