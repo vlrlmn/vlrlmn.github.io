@@ -6,7 +6,7 @@ body, html {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Убедитесь, что тело занимает хотя бы высоту окна просмотра */
+    height: 100vh;
 }
 
 .container {
