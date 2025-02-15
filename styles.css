@@ -41,7 +41,7 @@ intro {
     font-size: 40px;
 }
 
-h1 {
+h2 {
     font-family: 'Courier New', Courier, monospace; /* Использование моноширинного шрифта для имитации кода */
     background-color: #f4f4f4; /* Светлый фон, имитирующий фон редактора кода */
     color: #333; /* Темный цвет текста для контраста */
