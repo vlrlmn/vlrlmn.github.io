@@ -18,7 +18,9 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    letter-spacing: 1px;
     height: 100vh; 
+    line-height: 1.5;
 }
 
 header, main, footer {
