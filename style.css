@@ -64,6 +64,30 @@ nav ul li a {
     display: inline-block; /* Для выравнивания иконок и текста */
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Обеспечивает перенос на новую строку при нехватке места */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.image img {
+    width: 100%; /* Чтобы изображение заполнило блок */
+    height: auto; /* Сохранение пропорций изображения */
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
 footer {
     position: fixed;
     left: 0;
