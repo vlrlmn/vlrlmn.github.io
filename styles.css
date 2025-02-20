@@ -1,44 +1,63 @@
-
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'MyCustomFont1';
+    font-family: 'MyCustomFont2';
     background-color: #1a1a1a;
     color: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+    background-image: url('images/background.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+
 .container {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
 }
 
 .right-section {
-    width: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    position: relative;
 }
 
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('images/meee.png') no-repeat center center;
-    background-size: cover;
-    z-index: 1;
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: right ;
+    width: 50%;
+    justify-content: space-between;
+    height: 100vh;
 }
 
+.name {
+    font-size: 55px;
+    letter-spacing: 4px;
+    padding-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 3px;
+}
+
+.portfolio-tag {
+    font-size: 25px;
+    text-align: right;
+    margin-top: -5px;
+    margin-left: 105px;
+    font-weight: 300;
+
+}
 
 .content {
     display: flex;
@@ -46,50 +65,77 @@ body, html {
     z-index: 1;
 }
 
-
-.text {
-    width: 50%;
-    padding: 20px;
-    text-align: left;
+.text-section {
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-top: auto;
+    padding-bottom: 20px;
+    margin-left: 20px;
 }
 
+.number {
+    font-size: 30px;
+    margin-left: 5px;
+    padding-right: 10px;
+    color: white;
+    border-right: 1px solid white;
+    font-weight: 100;
+}
+
+.category {
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 65px;
+    background-color: rgb(229, 22, 22);
+    padding: 0px 7px;
+    font-weight: 300;
+}
+
+
 /*Menu main page*/
+
 .menu-large {
+    width: 70%;
+    text-align: right;
     z-index: 2;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+    padding-right: 70px;
+    margin-top: 90px;
 }
 
 .menu-large ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .menu-large ul li {
-    padding: 10px 0;
+    padding: 40px 0px;
 }
 
 .menu-large ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 120px;
-    z-index: 2;
+    font-size: 80px;
+    font-weight: 100;
 }
 
 /* Footer */
+
 footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    top: 10px;
+    right: 30px;
     width: 100%;
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
+    text-align: right;
     padding: 10px 0;
 }
+
 
 footer a {
     color: white;
@@ -103,34 +149,53 @@ footer a i {
 
 /*Projects*/
 .card-container {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     padding: 16px;
+    overflow-y: auto; /* Добавим вертикальную прокрутку */
+    max-height: calc(100vh - 100px); /* Высота с учетом меню и отступа */
 }
 
 .card {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 45%; /* Ширина для двух карточек в ряд */
     border-radius: 8px;
     overflow: hidden;
     padding: 16px;
+    margin-bottom: 10px; /* Добавим немного отступа внизу */
 }
 
 .card img {
     width: 100%;
     height: auto;
 }
-   
+
+.tag {
+    display: inline-block;
+    background-color: #e1e1e1;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 .card h3 {
+    color: red;
     margin-top: 16px;
     margin-bottom: 8px;
+    font-weight: 400;
 }
 
 .card p {
     color: #777;
+}
+
+.filter-btn {
+    margin-bottom: 50px;
 }
 
 /*About me*/
@@ -192,5 +257,10 @@ footer a i {
 @font-face {
     font-family: 'MyCustomFont1';
     src: url('fonts/myfont1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('fonts/myfont2.woff2') format('woff2');
         
 }
