@@ -181,3 +181,8 @@ footer a i {
 .menu-general nav ul li:last-child {
     padding-right: 50px;
 }
+@font-face {
+    font-family: 'MyCustomFont1';
+    src: url('fonts/myfont1.woff2') format('woff2'),
+        
+}
