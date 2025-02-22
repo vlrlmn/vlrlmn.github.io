@@ -304,9 +304,9 @@ footer a i {
 
 /* Стили для мобильных телефонов */
 @media (max-width: 767px) {
-    .container {
+    /* .container {
         flex-direction: column;
-    }
+    } */
 
     .card {
         width: 100%;
@@ -318,7 +318,7 @@ footer a i {
     }
 
     .menu-large ul li a {
-        font-size: 40px; /* Уменьшенный размер текста для улучшения читаемости */
+        font-size: 40px;
     }
 
     .footer {
