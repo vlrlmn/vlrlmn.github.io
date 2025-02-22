@@ -149,7 +149,7 @@ footer a i {
 
 /*Projects*/
 .card-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +165,7 @@ footer a i {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 45%; /* Ширина для двух карточек в ряд */
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 16px;
     margin-bottom: 10px; /* Добавим немного отступа внизу */
 }
@@ -277,24 +277,24 @@ footer a i {
 } */
 
 /* Стили для больших экранов (настольные компьютеры) */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .container {
         flex-direction: row;
     }
 
     .card {
-        width: 45%; /* Для двух карточек в ряд */
+        width: 45%;
     }
 }
 
-/* Стили для планшетов */
+
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         flex-direction: column;
     }
 
     .card {
-        width: 100%; /* Одна карточка на всю ширину контейнера */
+        width: 100%;
     }
 
     .menu-large {
@@ -302,11 +302,10 @@ footer a i {
     }
 }
 
-/* Стили для мобильных телефонов */
 @media (max-width: 767px) {
-    /* .container {
+    .container {
         flex-direction: column;
-    } */
+    }
 
     .card {
         width: 100%;
@@ -324,4 +323,4 @@ footer a i {
     .footer {
         text-align: center;
     }
-}
+} */
