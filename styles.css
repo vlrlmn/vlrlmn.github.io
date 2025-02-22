@@ -149,6 +149,7 @@ footer a i {
 
 /*Projects*/
 .card-container {
+    overflow: hidden;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
