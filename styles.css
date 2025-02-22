@@ -265,12 +265,62 @@ footer a i {
         
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .left-section, .right-section {
         width: 100%;
     }
 
     .menu-large ul li a {
-        font-size: 2.5rem; /* 40px */
+        font-size: 2.5rem;
+    }
+} */
+
+/* Стили для больших экранов (настольные компьютеры) */
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 45%; /* Для двух карточек в ряд */
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%; /* Одна карточка на всю ширину контейнера */
+    }
+
+    .menu-large {
+        padding: 10px 0;
+    }
+}
+
+/* Стили для мобильных телефонов */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .name, .portfolio-tag {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .menu-large ul li a {
+        font-size: 40px; /* Уменьшенный размер текста для улучшения читаемости */
+    }
+
+    .footer {
+        text-align: center;
     }
 }
