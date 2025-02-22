@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     margin: 0;
     padding: 0;
     font-family: 'MyCustomFont2';
@@ -12,8 +12,33 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MyCustomFont2';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1a1a1a;
 }
 
+/* Стили для главной страницы */
+.home-page {
+    background-image: url('images/background.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Стили для страницы "about" */
+.about-page {
+    background-color: #1a1a1a;
+}
 
 .container {
     display: flex;
@@ -161,7 +186,7 @@ footer a i {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #494949;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 45%; /* Ширина для двух карточек в ряд */
     border-radius: 8px;
@@ -173,11 +198,17 @@ footer a i {
 .card img {
     width: 100%;
     height: auto;
+    transition: filter 0.3s ease; /* Плавное изменение фильтра */
+    filter: grayscale(100%); /* Изначально делаем изображение черно-белым */
+}
+
+.card:hover img {
+    filter: grayscale(0%); /* При наведении возвращаем оригинальные цвета */
 }
 
 .tag {
     display: inline-block;
-    background-color: #e1e1e1;
+    background-color: red;
     padding: 5px 10px;
     margin-right: 5px;
     border-radius: 5px;
@@ -185,14 +216,15 @@ footer a i {
 }
 
 .card h3 {
-    color: red;
+    color: white;
     margin-top: 16px;
     margin-bottom: 8px;
-    font-weight: 400;
+    /* font-weight: 200; */
+    font-family: 'MyCustomFont2';
 }
 
 .card p {
-    color: #777;
+    color: white;
 }
 
 .filter-btn {
