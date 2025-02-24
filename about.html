@@ -112,45 +112,34 @@
 <!-------Scripts------->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-            var menuButton = document.querySelector('.menu-toggle');
-            var nav = document.querySelector('nav');
-            
-            menuButton.addEventListener('click', function() {
-                if (nav.style.width === '250px') {
-                    nav.style.width = '0';
-                    setTimeout(function() {
-                        nav.style.display = 'none';
-                    }, 500);
-                } else {
-                    nav.style.display = 'block';
-                    setTimeout(function() {
-                        nav.style.width = '250px';
-                    }, 10);
-                }
-            });
-        });
-    
-        document.addEventListener("DOMContentLoaded", function() {
-        const menuItems = document.querySelectorAll('.right-content .menu li');
+        const menuItems = document.querySelectorAll('.right-content ul li');
         const contentPanels = document.querySelectorAll('.content-panel');
-
+    
+        if (menuItems.length === 0) console.error("Menu items not found.");
+        if (contentPanels.length === 0) console.error("Content panels not found.");
+    
         menuItems.forEach(item => {
             item.addEventListener('mouseover', function() {
-                // Скрываем все панели
+           
                 contentPanels.forEach(panel => {
-                    panel.style.right = '-100%'; // Скрыть панель
+                    panel.style.transform = 'translateX(100%)'; 
                 });
-
-                // Показываем нужную панель
+    
+   
                 const panelId = this.getAttribute('data-content');
                 const panelToShow = document.getElementById(panelId);
                 if (panelToShow) {
-                    panelToShow.style.right = '0'; // Показать панель
+                    panelToShow.style.transform = 'translateX(0)';
+                } else {
+                    console.error("No panel found with ID:", panelId); 
                 }
             });
         });
     });
- </script>
+    </script>
+    
+    
+
 <!-- <footer>
     <a href="https://www.linkedin.com/in/valeria-lomakina-software/"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/vlrlmn"><i class="fab fa-github"></i></a>

@@ -266,20 +266,22 @@ footer a i {
 
 }
 
+
 .content-panel {
     position: fixed;
-    right: -100%;
     top: 0;
-    width: 20%;
+    left: 0; 
+    width: 20%; 
     height: 100%;
     background-color: white;
     color: black;
-    transition: right 0.5s;
-
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    overflow: auto;
 }
 
 .content-panel.active {
-    right: 0;
+    transform: translateX(0);
 }
 
 .about-page {
@@ -348,12 +350,9 @@ footer a i {
     display: inline-block; 
 }
 
-/* .menu-general nav ul li:last-child {
-    padding-right: 50px;
-} */
-
 .menu-general nav ul li a:hover {
     color: red;
+    font-weight: 100;
 }
 @font-face {
     font-family: 'MyCustomFont1';
