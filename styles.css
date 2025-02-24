@@ -79,6 +79,7 @@ body {
 
 }
 
+
 .content {
     display: flex;
     width: 100%;
@@ -332,7 +333,6 @@ footer a i {
 /*Menu general*/
 .menu-general ul {
     list-style-type: none;
-    margin: 1%;
     padding: 0;
     display: inline-block;
 }
@@ -348,8 +348,12 @@ footer a i {
     display: inline-block; 
 }
 
-.menu-general nav ul li:last-child {
+/* .menu-general nav ul li:last-child {
     padding-right: 50px;
+} */
+
+.menu-general nav ul li a:hover {
+    color: red;
 }
 @font-face {
     font-family: 'MyCustomFont1';

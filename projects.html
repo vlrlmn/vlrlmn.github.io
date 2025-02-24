@@ -4,41 +4,6 @@
     <meta charset="UTF-8">
     <title>Portfolio page</title>
     <link rel="stylesheet" href="styles.css">
-     <script>
-       document.addEventListener("DOMContentLoaded", function() {
-            var menuButton = document.querySelector('.menu-toggle');
-            var nav = document.querySelector('nav');
-            
-            menuButton.addEventListener('click', function() {
-                if (nav.style.width === '250px') {
-                    nav.style.width = '0';
-                    setTimeout(function() {
-                        nav.style.display = 'none';
-                    }, 500);
-                } else {
-                    nav.style.display = 'block';
-                    setTimeout(function() {
-                        nav.style.width = '250px';
-                    }, 10);
-                }
-            });
-        });
-
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            document.querySelectorAll('.card').forEach(card => {
-                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent);
-                if (tags.includes(filter)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-                    });
-                });
-            });
-
-    </script>
 </head>
 <body>
     <header class="menu-general">
@@ -93,19 +58,54 @@
             <p>Описание карточки 6</p>
           </div>
       </div>
-      <script>
-        const cards = document.querySelectorAll('.card');
-        
-        cards.forEach(card =&gt; {
-        card.addEventListener('click', () =&gt; {
-            card.classList.toggle('expanded');
-        });
-        });
-    </script>
-   <footer>
-    <a href="https://www.linkedin.com/in/valeria-lomakina-software/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/vlrlmn"><i class="fab fa-github"></i></a>
-    <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq"><i class="fas fa-file-download"></i></a>
-</footer>
+    <footer>
+        <a href="https://www.linkedin.com/in/valeria-lomakina-software/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/vlrlmn"><i class="fab fa-github"></i></a>
+        <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq"><i class="fas fa-file-download"></i></a>
+    </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var menuButton = document.querySelector('.menu-toggle');
+                    var nav = document.querySelector('nav');
+                    
+                    menuButton.addEventListener('click', function() {
+                        if (nav.style.width === '250px') {
+                            nav.style.width = '0';
+                            setTimeout(function() {
+                                nav.style.display = 'none';
+                            }, 500);
+                        } else {
+                            nav.style.display = 'block';
+                            setTimeout(function() {
+                                nav.style.width = '250px';
+                            }, 10);
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const filter = this.getAttribute('data-filter');
+                        document.querySelectorAll('.card').forEach(card => {
+                            const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent);
+                            if (tags.includes(filter)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+                
+                </script>
+                <script>
+                    const cards = document.querySelectorAll('.card');
+                  
+                    cards.forEach(card =&gt; {
+                        card.addEventListener('click', () =&gt; {
+                            card.classList.toggle('expanded');
+                          });
+                      });
+                      </script>
 </body>
 </html> 

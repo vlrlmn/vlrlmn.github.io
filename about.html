@@ -5,26 +5,7 @@
     <meta charset="UTF-8">
     <title>Portfolio page</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-       document.addEventListener("DOMContentLoaded", function() {
-            var menuButton = document.querySelector('.menu-toggle');
-            var nav = document.querySelector('nav');
-            
-            menuButton.addEventListener('click', function() {
-                if (nav.style.width === '250px') {
-                    nav.style.width = '0';
-                    setTimeout(function() {
-                        nav.style.display = 'none';
-                    }, 500);
-                } else {
-                    nav.style.display = 'block';
-                    setTimeout(function() {
-                        nav.style.width = '250px';
-                    }, 10);
-                }
-            });
-        });
-    </script>
+
 
     
 </head>
@@ -127,30 +108,53 @@
         My current studies in computer science are further deepening my technical expertise, particularly in backend development and system optimizations. 
         As I transition into a more tech-focused role, I am excited to bring my unique blend of skills to innovate and drive projects forward in the tech industry.</p>
     </div>
+
+<!-------Scripts------->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll('.right-content .menu li');
-    const contentPanels = document.querySelectorAll('.content-panel');
-
-    menuItems.forEach(item => {
-        item.addEventListener('mouseover', function() {  // Изменено с click на mouseover
-            const contentId = this.getAttribute('data-content');
-            const panel = document.getElementById(contentId);
-
-            contentPanels.forEach(p => {
-                p.classList.remove('active'); // Скрываем все панели
+            var menuButton = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('nav');
+            
+            menuButton.addEventListener('click', function() {
+                if (nav.style.width === '250px') {
+                    nav.style.width = '0';
+                    setTimeout(function() {
+                        nav.style.display = 'none';
+                    }, 500);
+                } else {
+                    nav.style.display = 'block';
+                    setTimeout(function() {
+                        nav.style.width = '250px';
+                    }, 10);
+                }
             });
+        });
+    
+        document.addEventListener("DOMContentLoaded", function() {
+        const menuItems = document.querySelectorAll('.right-content .menu li');
+        const contentPanels = document.querySelectorAll('.content-panel');
 
-            panel.classList.add('active'); // Показываем нужную панель
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                // Скрываем все панели
+                contentPanels.forEach(panel => {
+                    panel.style.right = '-100%'; // Скрыть панель
+                });
+
+                // Показываем нужную панель
+                const panelId = this.getAttribute('data-content');
+                const panelToShow = document.getElementById(panelId);
+                if (panelToShow) {
+                    panelToShow.style.right = '0'; // Показать панель
+                }
+            });
         });
     });
-});
-
-    </script>
-<footer>
+ </script>
+<!-- <footer>
     <a href="https://www.linkedin.com/in/valeria-lomakina-software/"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/vlrlmn"><i class="fab fa-github"></i></a>
     <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq"><i class="fas fa-file-download"></i></a>
-</footer>
+</footer> -->
 </body>
 </html>
