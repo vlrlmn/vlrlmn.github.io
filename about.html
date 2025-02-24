@@ -25,8 +25,10 @@
             });
         });
     </script>
+
+    
 </head>
-<body>
+<body class="about-page">
     <header class="menu-general">
         <nav>
             <ul>
@@ -37,46 +39,118 @@
             </ul>
         </nav>
     </header>
+<div class="about-container">
+    <div class="left-content">
+        <div class="summary"> 
+            <p class="summary-header">Summary:</p>
+            <p class="summary-text">My name is Valeriia Lomakina and I am computer science student with a background in QA and software developemnt 
+            and former career in HR process automation. I have a passion in building efficient backend and posh frontend.</p>
+        </div>
 
-    <div class="demo">
-        <input type="checkbox" id="hd-1" class="hide"/>
-        <label for="hd-1" >Qualifications</label>
-        <div>
-            My qualifications
+        <div class="skills">
+            <p class="skills-header">Skills:</p>
+            <ul >
+                <li><span class="skill-section">Programming:</span> <span class="skill-name">C/C++, Python/Django, JavaScript, HTML/CSS</span></li>
+                <li><span class="skill-section">Tools:</span> <span class="skill-name">Git, Docker, Virtualization, SQL</span></li>
+                <li><span class="skill-section">Concepts:</span> <span class="skill-name">OOP, Data Structures, Shell</span></li>
+                <li><span class="skill-section">Testing:</span> <span class="skill-name">API, Automation Scripts, Postman, Charles</span></li>
+                <li><span class="skill-section">Personal:</span> <span class="skill-name">Communication, Customer approach, Project management, Web Design</span></li>
+            </ul>
         </div>
-        <br/>
-        <br/>
-        <input type="checkbox" id="hd-2" class="hide"/>
-        <label for="hd-2">Skills</label>
-        <div>
-            My skills
-        </div>
-        <br/>
-        <br/>
-        <input type="checkbox" id="hd-3" class="hide"/>
-        <label for="hd-3" >Work experience</label>
-        <div>
-            My work experience
-        </div>
-        <br/>
-        <br/>
-        <input type="checkbox" id="hd-4" class="hide"/>
-        <label for="hd-4">Achievements</label>
-        <div>
-            My achievements
-        </div>
-        <br/>
-        <br/>
-        <input type="checkbox" id="hd-4" class="hide"/>
-        <label for="hd-4">Reflections</label>
-        <div>
-           Reflections
+    
+        <div class="qualifications">
+            <p class="qualifications-header">Qualifications:</p>
+            <ul >
+                <li>42AbuDhabi: Computer Science, 2025</li>
+                <li>MSTU: Software Basics, 2022</li>
+                <li>Nethology: Web Development Basics, 2022</li>
+                <li>SkyPro: Professional Reskilling under the program “Quality Assurance”, 2023</li>
+                <li>FreeCodeCamp: Responsive Web Design Certification, 2023</li>
+                <li>ESEI Business School of Barcelona: Digital Tools in Business, 2019</li>
+            </ul>
         </div>
     </div>
-    <footer>
-        <a href="https://www.linkedin.com/in/valeria-lomakina-software/">LinkedIn</a>
-        <a href="https://github.com/vlrlmn">GitHub</a>
-        <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq">Resume</a>
-    </footer>
+    
+    <div class="me"> <img src="images/me.jpeg" alt="Me"> </div>
+
+    <div class="right-content">
+        <ul>
+            <li data-content="experience"><span class="number">01</span> <span class="category">Work Experience</span></li>
+            <li data-content="achievements"><span class="number">02</span> <span class="category">Achievements</span></li>
+            <li data-content="reflections"><span class="number">03</span>  <span class="category">Reflections</span></li>
+        </ul>
+    </div>
+</div>
+
+
+    <div class="content-panel" id="experience">
+        <p class="experience-header">01 Work Experience </p>
+        <p><span class="job">Skyeng, QA Intern</span> <span class="job-data">April 2022 - October 2023</span></p>
+        <ul>
+            <li>Conducted manual and automated testing for an internal platform aimed at English teachers.</li>
+            <li>Automated testing of API integrations using Python scripts within Postman.</li>
+            <li>Developed and maintained testing documentation in Confluence and managed bugs in Jira.</li>
+        </ul>
+
+        <p><span class="job"> adidas, Leading Training and Development Specialist</span> <span class="job-data">April 2021 - October 2022</span></p>
+        <ul>
+            <li>Implemented a learning portal in Kazakhstan that automated the training process for over 400 retail employees.</li>
+            <li>Designed and constructed over 20 e-learning modules for the Global Sales Academy, enhancing learning across multiple regions.</li>
+            <li>Created and implemented on CIS market automated tool of gathering learners' feedback, which helped to gather 100% of feedback and automatically calculate the level of satisfaction</li>
+            <li>LMS development: automated process of training organization (which helped trainers to exempt 20% of their working time)</li>
+        </ul>
+
+        <p><span class="job"> GFG (Lamoda), Training and Development Specialist</span> <span class="job-data">December 2019 - April 2021</span></p>
+        <ul>
+            <li>Automated onboarding routine which released by 30% of workload (onboarding mailings, efficiency measurement and calculations within Microsoft Tools - Teams, Power BI)</li>
+            <li>Created personalized onboarding approach through AI implementation which upskilled managers' onboarding responsibility (used AssessFirst AI tool)</li>
+            <li>Automated performance review process and semi-annual bonus calculations</li>
+            <li>Analytical preparation for each performance review and achieving 100% clear information (~800 back office employees; ~350 IT employees)</li>
+        </ul>
+    </div>
+
+    <div class="content-panel" id="achievements">
+        <p class="achievements-header"> 02 Achievements </p>
+        <ul>
+            <li>Performance review results exceeding set targets - 120% of 100% (adidas talent pool), 2022</li>
+            <li>adidas Awards: Best Internal Trainer, 2022</li>
+            <li>adidas Awards: Best Rookie Trainer, 2021</li>
+            <li>HH Awards: best HR project on CIS market "AI implementation to enhance teams hiring and development", 2019</li>
+            <li>Master's degree "HR in cross-cultural environment" with highest score 5.0 of 5.0, 2019</li>
+        </ul>
+    </div>
+
+    <div class="content-panel" id="reflections">
+        <p>Reflections</p>
+        <p>My journey through various roles in QA, training, and development has enriched my understanding of both technological and business processes. 
+        At adidas and Lamoda, I spearheaded initiatives that not only improved operational efficiencies but also enhanced employee learning experiences. 
+        My current studies in computer science are further deepening my technical expertise, particularly in backend development and system optimizations. 
+        As I transition into a more tech-focused role, I am excited to bring my unique blend of skills to innovate and drive projects forward in the tech industry.</p>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuItems = document.querySelectorAll('.right-content .menu li');
+    const contentPanels = document.querySelectorAll('.content-panel');
+
+    menuItems.forEach(item => {
+        item.addEventListener('mouseover', function() {  // Изменено с click на mouseover
+            const contentId = this.getAttribute('data-content');
+            const panel = document.getElementById(contentId);
+
+            contentPanels.forEach(p => {
+                p.classList.remove('active'); // Скрываем все панели
+            });
+
+            panel.classList.add('active'); // Показываем нужную панель
+        });
+    });
+});
+
+    </script>
+<footer>
+    <a href="https://www.linkedin.com/in/valeria-lomakina-software/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/vlrlmn"><i class="fab fa-github"></i></a>
+    <a href="https://drive.google.com/uc?export=download&id=1BJsobMiYSq3fwLiydPx0xSAAiOeS2TCq"><i class="fas fa-file-download"></i></a>
+</footer>
 </body>
 </html>

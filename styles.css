@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
 } */
 
-/* Общие стили */
+/*  Common style */
 body {
     margin: 0;
     padding: 0;
@@ -23,21 +23,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
     background-color: #1a1a1a;
 }
 
-/* Стили для главной страницы */
+/* Main page*/
 .home-page {
     background-image: url('images/background.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* Стили для страницы "about" */
-.about-page {
-    background-color: #1a1a1a;
+    overflow: hidden;
 }
 
 .container {
@@ -91,11 +86,10 @@ body {
 }
 
 .text-section {
-    width: 110%;
+    width: 120%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    /* align-items: center; */
     margin-top: auto;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -111,7 +105,7 @@ body {
 }
 
 .category {
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     margin-right: 65px;
     background-color: rgb(229, 22, 22);
@@ -121,7 +115,6 @@ body {
 
 
 /*Menu main page*/
-
 .menu-large {
     width: 70%;
     text-align: right;
@@ -151,7 +144,6 @@ body {
 }
 
 /* Footer */
-
 footer {
     position: fixed;
     top: 10px;
@@ -159,8 +151,8 @@ footer {
     width: 100%;
     text-align: right;
     padding: 10px 0;
+    z-index: 3;
 }
-
 
 footer a {
     color: white;
@@ -181,35 +173,34 @@ footer a i {
     justify-content: center;
     gap: 16px;
     padding: 16px;
-    overflow-y: auto; /* Добавим вертикальную прокрутку */
-    max-height: calc(100vh - 100px); /* Высота с учетом меню и отступа */
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
 }
 
 .card {
     background-color: #494949;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Ширина для двух карточек в ряд */
+    width: 45%;
     border-radius: 8px;
-    /* overflow: hidden; */
     padding: 16px;
-    margin-bottom: 10px; /* Добавим немного отступа внизу */
+    margin-bottom: 10px;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    transition: filter 0.3s ease; /* Плавное изменение фильтра */
-    filter: grayscale(100%); /* Изначально делаем изображение черно-белым */
+    transition: filter 0.3s ease;
+    filter: grayscale(100%);
 }
 
 .card:hover img {
-    filter: grayscale(0%); /* При наведении возвращаем оригинальные цвета */
+    filter: grayscale(0%);
 }
 
 .tag {
     display: inline-block;
     background-color: red;
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin-right: 5px;
     border-radius: 5px;
     font-size: 14px;
@@ -219,7 +210,7 @@ footer a i {
     color: white;
     margin-top: 16px;
     margin-bottom: 8px;
-    /* font-weight: 200; */
+    font-weight: 400;
     font-family: 'MyCustomFont2';
 }
 
@@ -232,43 +223,116 @@ footer a i {
 }
 
 /*About me*/
-.hide {
-    display: none; 
-}
-.hide + label ~ div{
-    display: none;
+.about-container {
+    display: flex;
+    width: 100%;
 }
 
-.hide + label {
-    border-bottom: 1px dotted green;
-    padding: 0;
-    color: green;
+.left-content {
+    width: 60%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.me {
+    width: 30%;
+    align-self: center;
+}
+
+.me img {
+    margin: 3vh;
+    padding: 2vh;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(125%) brightness(115%);    
+}
+
+.right-content {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: rgb(66, 66, 66);
+    font-weight: 300;
+}
+
+.right-content ul {
+    margin-top: 35%;
+}
+
+.right-content .menu li {
     cursor: pointer;
-    display: inline-block; 
+
 }
 
-.hide:checked + label {
-    color: red;
-    border-bottom: 0;
+.content-panel {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: right 0.5s;
+
 }
 
-.hide:checked + label + div {
-    display: block; 
-    background: #efefef;
-    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-    box-shadow: inset 3px 3px 10px #7d8e8f;
-    padding: 10px; 
+.content-panel.active {
+    right: 0;
 }
 
-.demo {
-    margin: 5% 10%;
+.about-page {
+    overflow-y: auto;
+    font-weight: 300;
+}
+
+.skills {
+    font-weight: 200;
+    /* border-left: white; */
+    
+}
+
+.qualifications {
+    font-weight: 200;
+    border-left: white;
+}
+
+.skills ul li {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+.experience ul li {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+.qualifications ul li {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+.achievements ul li {
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.right-content ul li {
+    list-style-type: none;
+    padding: 10%;
 }
 
 /*Menu general*/
 .menu-general ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1%;
     padding: 0;
     display: inline-block;
 }
