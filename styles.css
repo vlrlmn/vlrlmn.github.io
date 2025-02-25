@@ -270,10 +270,11 @@ footer a i {
     position: fixed;
     top: 0;
     left: 0; 
-    width: 60%;
+    width: 50%;
     height: 100%;
     /* margin: 10%; */
-    background-color: rgb(62, 62, 62);
+    background-color: #1a1a1a;
+
     color: rgb(216, 216, 216);
     transition: transform 0.5s ease;
     transform: translateX(-100%);
@@ -305,6 +306,10 @@ footer a i {
     list-style-type: none;
     font-weight: 400;
 
+}
+
+.qualifications, .skills {
+    padding-top: 3%;
 }
 
 .experience ul li {
@@ -354,6 +359,47 @@ footer a i {
     color: red;
     font-weight: 100;
 }
+
+/*Contact*/
+
+.mailto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    font-size: 24px;
+    color: white;
+}
+.container.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+/* .contact-option:last-child {
+    border-right: none;
+} */
+
+a {
+    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    font-size: 16px; /* Размер шрифта ссылок */
+    padding: 10px 20px; /* Паддинг для увеличения кликабельной области */
+}
+/*Mobile*/
+
 @font-face {
     font-family: 'MyCustomFont1';
     src: url('fonts/myfont1.woff2') format('woff2');
