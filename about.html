@@ -1,78 +1,77 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio page</title>
-    <link rel="stylesheet" href="styles.css">
-
-
-    
-</head>
-<body class="about-page">
-    <header class="menu-general">
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio page</title>
+        <link rel="stylesheet" href="styles.css">
+        
+        
+        
+    </head>
+    <body class="about-page">
+        <header class="menu-general">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html" class="active">About me</a></li>
+                    <li><a href="projects.html">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="about-container">
+            <div class="left-content">
+            <div class="summary"> 
+                <p class="summary-text">My name is Valeriia Lomakina and I am computer science student with a background in QA and software developemnt 
+                and former career in HR process automation. I have a passion in building efficient backend and posh frontend.</p>
+            </div>
+            
+            <div class="skills">
+                <p class="skills-header">Skills:</p>
+                <ul >
+                    <li><span class="skill-section">Programming:</span> <span class="skill-name">C/C++, Python/Django, JavaScript, HTML/CSS</span></li>
+                    <li><span class="skill-section">Tools:</span> <span class="skill-name">Git, Docker, Virtualization, SQL</span></li>
+                    <li><span class="skill-section">Concepts:</span> <span class="skill-name">OOP, Data Structures, Shell</span></li>
+                    <li><span class="skill-section">Testing:</span> <span class="skill-name">API, Automation Scripts, Postman, Charles</span></li>
+                    <li><span class="skill-section">Personal:</span> <span class="skill-name">Communication, Customer approach, Project management, Web Design</span></li>
+                </ul>
+            </div>
+            
+            <div class="qualifications">
+                <p class="qualifications-header">Qualifications:</p>
+                <ul >
+                    <li>42AbuDhabi: Computer Science, 2025</li>
+                    <li>MSTU: Software Basics, 2022</li>
+                    <li>Nethology: Web Development Basics, 2022</li>
+                    <li>SkyPro: Professional Reskilling under the program “Quality Assurance”, 2023</li>
+                    <li>FreeCodeCamp: Responsive Web Design Certification, 2023</li>
+                    <li>ESEI Business School of Barcelona: Digital Tools in Business, 2019</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="me"> <img src="images/me.jpeg" alt="Me"> </div>
+        
+        <div class="right-content">
             <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="projects.html">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
-<div class="about-container">
-    <div class="left-content">
-        <div class="summary"> 
-            <p class="summary-header">Summary:</p>
-            <p class="summary-text">My name is Valeriia Lomakina and I am computer science student with a background in QA and software developemnt 
-            and former career in HR process automation. I have a passion in building efficient backend and posh frontend.</p>
-        </div>
-
-        <div class="skills">
-            <p class="skills-header">Skills:</p>
-            <ul >
-                <li><span class="skill-section">Programming:</span> <span class="skill-name">C/C++, Python/Django, JavaScript, HTML/CSS</span></li>
-                <li><span class="skill-section">Tools:</span> <span class="skill-name">Git, Docker, Virtualization, SQL</span></li>
-                <li><span class="skill-section">Concepts:</span> <span class="skill-name">OOP, Data Structures, Shell</span></li>
-                <li><span class="skill-section">Testing:</span> <span class="skill-name">API, Automation Scripts, Postman, Charles</span></li>
-                <li><span class="skill-section">Personal:</span> <span class="skill-name">Communication, Customer approach, Project management, Web Design</span></li>
-            </ul>
-        </div>
-    
-        <div class="qualifications">
-            <p class="qualifications-header">Qualifications:</p>
-            <ul >
-                <li>42AbuDhabi: Computer Science, 2025</li>
-                <li>MSTU: Software Basics, 2022</li>
-                <li>Nethology: Web Development Basics, 2022</li>
-                <li>SkyPro: Professional Reskilling under the program “Quality Assurance”, 2023</li>
-                <li>FreeCodeCamp: Responsive Web Design Certification, 2023</li>
-                <li>ESEI Business School of Barcelona: Digital Tools in Business, 2019</li>
+                <li data-content="experience"><span class="number">01</span> <span class="category">Work Experience</span></li>
+                <li data-content="achievements"><span class="number">02</span> <span class="category">Achievements</span></li>
+                <li data-content="reflections"><span class="number">03</span>  <span class="category">Reflections</span></li>
             </ul>
         </div>
     </div>
     
-    <div class="me"> <img src="images/me.jpeg" alt="Me"> </div>
-
-    <div class="right-content">
-        <ul>
-            <li data-content="experience"><span class="number">01</span> <span class="category">Work Experience</span></li>
-            <li data-content="achievements"><span class="number">02</span> <span class="category">Achievements</span></li>
-            <li data-content="reflections"><span class="number">03</span>  <span class="category">Reflections</span></li>
-        </ul>
-    </div>
-</div>
-
-
+    
     <div class="content-panel" id="experience">
-        <p class="experience-header">01 Work Experience </p>
+        <p class="panel-header">01 Work Experience </p>
         <p><span class="job">Skyeng, QA Intern</span> <span class="job-data">April 2022 - October 2023</span></p>
         <ul>
             <li>Conducted manual and automated testing for an internal platform aimed at English teachers.</li>
             <li>Automated testing of API integrations using Python scripts within Postman.</li>
             <li>Developed and maintained testing documentation in Confluence and managed bugs in Jira.</li>
         </ul>
-
+        
         <p><span class="job"> adidas, Leading Training and Development Specialist</span> <span class="job-data">April 2021 - October 2022</span></p>
         <ul>
             <li>Implemented a learning portal in Kazakhstan that automated the training process for over 400 retail employees.</li>
@@ -80,7 +79,7 @@
             <li>Created and implemented on CIS market automated tool of gathering learners' feedback, which helped to gather 100% of feedback and automatically calculate the level of satisfaction</li>
             <li>LMS development: automated process of training organization (which helped trainers to exempt 20% of their working time)</li>
         </ul>
-
+        
         <p><span class="job"> GFG (Lamoda), Training and Development Specialist</span> <span class="job-data">December 2019 - April 2021</span></p>
         <ul>
             <li>Automated onboarding routine which released by 30% of workload (onboarding mailings, efficiency measurement and calculations within Microsoft Tools - Teams, Power BI)</li>
@@ -89,9 +88,9 @@
             <li>Analytical preparation for each performance review and achieving 100% clear information (~800 back office employees; ~350 IT employees)</li>
         </ul>
     </div>
-
+    
     <div class="content-panel" id="achievements">
-        <p class="achievements-header"> 02 Achievements </p>
+        <p class="panel-header"> 02 Achievements </p>
         <ul>
             <li>Performance review results exceeding set targets - 120% of 100% (adidas talent pool), 2022</li>
             <li>adidas Awards: Best Internal Trainer, 2022</li>
@@ -100,45 +99,42 @@
             <li>Master's degree "HR in cross-cultural environment" with highest score 5.0 of 5.0, 2019</li>
         </ul>
     </div>
-
+    
     <div class="content-panel" id="reflections">
-        <p>Reflections</p>
+        <p class="panel-header">03 Reflections</p>
         <p>My journey through various roles in QA, training, and development has enriched my understanding of both technological and business processes. 
-        At adidas and Lamoda, I spearheaded initiatives that not only improved operational efficiencies but also enhanced employee learning experiences. 
-        My current studies in computer science are further deepening my technical expertise, particularly in backend development and system optimizations. 
-        As I transition into a more tech-focused role, I am excited to bring my unique blend of skills to innovate and drive projects forward in the tech industry.</p>
-    </div>
-
-<!-------Scripts------->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll('.right-content ul li');
-    const contentPanels = document.querySelectorAll('.content-panel');
-
+            At adidas and Lamoda, I spearheaded initiatives that not only improved operational efficiencies but also enhanced employee learning experiences. 
+            My current studies in computer science are further deepening my technical expertise, particularly in backend development and system optimizations. 
+            As I transition into a more tech-focused role, I am excited to bring my unique blend of skills to innovate and drive projects forward in the tech industry.</p>
+        </div>
+        
+        <!-------Scripts------->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const menuItems = document.querySelectorAll('.right-content ul li');
+                const contentPanels = document.querySelectorAll('.content-panel');
+                
     if (menuItems.length === 0) console.error("Menu items not found.");
     if (contentPanels.length === 0) console.error("Content panels not found.");
 
     menuItems.forEach(item => {
         item.addEventListener('mouseover', function() {
-            // Сначала скрываем все панели
             contentPanels.forEach(panel => {
-                panel.style.transform = 'translateX(-100%)'; // Задаем, чтобы все панели были скрыты
+                panel.style.transform = 'translateX(-100%)';
             });
 
-            // Затем показываем нужную панель
             const panelId = this.getAttribute('data-content');
             const panelToShow = document.getElementById(panelId);
             if (panelToShow) {
-                panelToShow.style.transform = 'translateX(0)'; // Показываем только нужную панель
+                panelToShow.style.transform = 'translateX(0)';
             } else {
                 console.error("No panel found with ID:", panelId);
             }
         });
 
-        // Добавляем обработчик события mouseout для скрытия панелей
         item.addEventListener('mouseout', function() {
             contentPanels.forEach(panel => {
-                panel.style.transform = 'translateX(-100%)'; // Скрываем все панели при убирании курсора
+                panel.style.transform = 'translateX(-100%)';
             });
         });
     });
