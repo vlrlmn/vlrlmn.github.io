@@ -266,15 +266,15 @@ footer a i {
 
 }
 
-
 .content-panel {
     position: fixed;
     top: 0;
     left: 0; 
-    width: 20%; 
+    width: 60%;
     height: 100%;
-    background-color: white;
-    color: black;
+    /* margin: 10%; */
+    background-color: rgb(62, 62, 62);
+    color: rgb(216, 216, 216);
     transition: transform 0.5s ease;
     transform: translateX(-100%);
     overflow: auto;
