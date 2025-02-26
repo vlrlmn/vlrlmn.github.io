@@ -355,6 +355,7 @@ footer a i:hover {
 
 .menu-general nav ul li a.active {
     color: red; 
+    font-weight: 100;
 }
 
 /*Contact*/
@@ -401,10 +402,15 @@ a {
     color: red !important; 
     font-size: smaller;
     transition: 0.7s;
-    cursor: url('images/cursor-3.cur'), auto;
+    cursor: url('images/cursor-4.cur'), auto;
 }
+
 .mailto a:hover {
     cursor: url('images/cursor-5.cur'), auto;
+}
+
+.contact-option a:hover {
+    cursor: url('images/cursor-4.cur'), auto;
 }
 /*Mobile*/
 
