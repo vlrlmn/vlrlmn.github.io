@@ -178,12 +178,10 @@ footer a i:hover {
     background-color: #494949;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 40%;
-    /* border-radius: 8px; */
     padding: 16px;
     margin-bottom: 1vh;
     margin-left: 1vh;
     animation-play-state: paused;
-
 }
 
 .card img {
