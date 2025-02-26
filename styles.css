@@ -462,7 +462,7 @@ form {
     font-size: 1.3vh;
   }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .left-section, .right-section {
         width: 100%;
     }
@@ -470,7 +470,23 @@ form {
     .menu-large ul li a {
         font-size: 2.5rem;
     }
-} */
+
+    .card {
+        background-color: #494949;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        padding: 2vh;
+        margin-bottom: 1vh;
+        margin-left: 1vh;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10vh;
+      }
+
+}
 
 /* Стили для больших экранов (настольные компьютеры) */
 /* @media (min-width: 992px) {
