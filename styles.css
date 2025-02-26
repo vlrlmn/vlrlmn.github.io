@@ -171,6 +171,7 @@ footer a i:hover {
     padding: 16px;
     overflow-y: auto;
     max-height: calc(100vh - 100px);
+    text-align: center;
 }
 
 .card {
@@ -181,13 +182,18 @@ footer a i:hover {
     padding: 16px;
     margin-bottom: 1vh;
     margin-left: 1vh;
+    animation-play-state: paused;
+
 }
 
 .card img {
-    width: 100%;
+    width: 80%;
     height: auto;
     transition: filter 0.3s ease;
     filter: grayscale(100%);
+    text-align: center;
+    align-items: center;
+    animation-play-state: paused;
 }
 
 .card:hover img {
