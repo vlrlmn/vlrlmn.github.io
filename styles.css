@@ -424,7 +424,7 @@ a {
 .contact-option a:hover {
     cursor: url('images/cursor-4.cur'), auto;
 }
-/*Mobile*/
+
 
 @font-face {
     font-family: 'MyCustomFont1';
@@ -456,6 +456,7 @@ button {
     font-size: 1.7vh;
 }
 
+/*Mobile*/
 @media (max-width: 800px) {
     .home-page {
         background-image: url('images/mob.JPG');
@@ -523,7 +524,7 @@ button {
     }
 
     .menu-general nav ul li a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         padding: 10px 10px;
         display: block;
     }
