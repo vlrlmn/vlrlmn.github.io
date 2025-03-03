@@ -463,6 +463,14 @@ form {
   }
 
 @media (max-width: 768px) {
+    .home-page {
+        background-image: url('images/mob.JPG');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
     .left-section, .right-section {
         width: 100%;
     }
