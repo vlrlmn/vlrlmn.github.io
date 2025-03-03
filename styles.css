@@ -450,12 +450,16 @@ a {
         background-repeat: no-repeat;
         overflow: hidden;
     }
-
+/* 
     .portfolio-tag {
         font-size: 1rem;
         text-align: center;
         margin-left: 50%;
         font-weight: 300;
+    } */
+    .portfolio-tag {
+        font-size: 1.2rem;
+        text-align: center;
     }
     
 
