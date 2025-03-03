@@ -504,19 +504,19 @@ button {
     .menu-general ul {
         width: 100%;
         text-align: center;
-        padding: 5px 0;
+        /* padding: 5px 0; */
     }
 
     .menu-general nav ul li {
         display: block;
         width: 100%;
         text-align: center;
-        padding: 8px 0;
+        padding: 5px 0;
     }
 
     .menu-general nav ul li a {
-        font-size: 1.2rem;
-        padding: 10px 20px;
+        font-size: 1.5rem;
+        padding: 10px 10px;
         display: block;
     }
     }
