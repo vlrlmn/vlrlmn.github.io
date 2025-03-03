@@ -114,7 +114,7 @@ body {
 }
 
 .menu-large ul li {
-    padding: 5vh 0px;
+    padding: 2vw 0px;
 }
 
 .menu-large ul li a {
@@ -452,15 +452,12 @@ a {
     }
 
     .portfolio-tag {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         margin-left: 50%;
         font-weight: 300;
     }
     
-    /* .left-section, .right-section {
-        width: 100%;
-    } */
 
     .menu-large ul li a {
         font-size: 1.2rem;
@@ -480,54 +477,4 @@ a {
         justify-content: flex-end;
         padding-right: 10vh;
       }
-
 }
-
-/* Стили для больших экранов (настольные компьютеры) */
-/* @media (min-width: 992px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .card {
-        width: 45%;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .menu-large {
-        padding: 10px 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .name, .portfolio-tag {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .menu-large ul li a {
-        font-size: 40px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-} */
