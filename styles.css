@@ -267,6 +267,10 @@ footer a i:hover {
     font-weight: 200;
 }
 
+.content-panel .experience {
+    font-size: 16px;
+}
+
 .content-panel .job 
 {
     font-weight: 500;
@@ -453,13 +457,6 @@ a {
         background-repeat: no-repeat;
         overflow: hidden;
     }
-    /* 
-    .portfolio-tag {
-        font-size: 1rem;
-        text-align: center;
-        margin-left: 50%;
-        font-weight: 300;
-        } */
     
     .portfolio-tag {
         font-size: 1rem;
@@ -471,6 +468,24 @@ a {
         font-size: 1.2rem;
     }
     
+    .number {
+        font-size: 3vh;
+        margin-left: 5px;
+        padding-right: 5px;
+        color: white;
+        border-right: 1px solid white;
+        font-weight: 100;
+    }
+    
+    .category {
+        font-size: 2vh;
+        display: inline-block;
+        margin-right: 5px;
+        background-color: rgb(229, 22, 22);
+        padding: 0px 1vh;
+        font-weight: 300;
+    }
+
     .card {
         background-color: #494949;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -479,14 +494,7 @@ a {
         margin-bottom: 1vh;
         /* margin-left: 1vh; */
     }
-    /* .card {
-        background-color: #494949;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 90%;
-        padding: 10px;
-        margin-bottom: 10px;
-    } */
-    
+
     .filters {
         display: flex;
         justify-content: center;
