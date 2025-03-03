@@ -3,17 +3,17 @@
 Welcome to my GitHub profile repository!
 
 💻 **About Me:**  
-I am a future backend developer focusing on **C/C++**, **Python**, and **Unix systems**.  
-Currently, I’m exploring technologies like **Docker**, **Django**, and **SwiftUI**.
+I am a future backend developer focusing on **C/C++**, **Python**, **Docker** and **Unix systems**.  
+Currently, I’m exploring technologies like **Django**, and **SwiftUI**.
 
-🔭 Working on projects like **JuniorSunflower** — a job board for juniors and interns.
+🔭 Working on projects like **E-portfolio** — my own projects page.
 
 ---
 
 ## 🛠️ Tech Stack
 - **Languages:** C, C++, Python, SwiftUI  
 - **Tools:** Git, CMake, Makefile, Django  
-- **Other Skills:** Linux, Virtualization, Unix Systems  
+- **Other Skills:** Linux, Virtualization, Unix Systems, Docker  
 
 ---
 
