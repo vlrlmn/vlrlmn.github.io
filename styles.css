@@ -171,7 +171,7 @@ footer a i:hover {
 }
 
 .card {
-    background-color: #494949;
+    background-color: #000000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 40%;
     padding: 2vh;
@@ -188,7 +188,6 @@ footer a i:hover {
     filter: grayscale(100%);
     text-align: center;
     align-items: center;
-    /* display:flex; */
 }
 
 .card:hover img {
@@ -202,7 +201,7 @@ footer a i:hover {
     background-color: red;
     padding: 5px 5px;
     margin-right: 5px;
-    font-size: 1vh;
+    font-size: 1.2vh;
 }
 
 .card h3 {
@@ -431,13 +430,13 @@ a {
 }
 
 
-  .filters {
+.filters {
     display: flex;
     justify-content: flex-end;
     padding-right: 18vh;
-  }
+}
 
-  button {
+button {
     /* margin-top: 5vh; */
     padding: 0.5vh 2vh;
     border: none;
@@ -446,8 +445,8 @@ a {
     cursor: url('images/cursor-6.cur'), auto;
     font-family: 'Courier New', Courier, monospace; 
     margin: 2vh;
-    font-size: 1.3vh;
-  }
+    font-size: 1.7vh;
+}
 
 @media (max-width: 800px) {
     .home-page {
@@ -490,7 +489,8 @@ a {
         background-color: #494949;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 98%;
-        padding: 2vh;
+        /* padding: 2vh;
+        padding-top: 1vh; */
         margin-bottom: 1vh;
         /* margin-left: 1vh; */
     }
@@ -501,7 +501,6 @@ a {
         padding-right: 10vh;
     }
 
-        
     .menu-general ul {
         width: 100%;
         text-align: center;
