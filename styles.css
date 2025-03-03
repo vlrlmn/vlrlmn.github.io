@@ -361,7 +361,7 @@ footer a i:hover {
     align-items: center;
     justify-content: center;
     height: 80%;
-    font-size: 64px;
+    font-size: 10vh;
     color: white;
     border-top: 2px solid white;
     font-weight: 300;
@@ -377,10 +377,10 @@ footer a i:hover {
     display: flex;
     justify-content: center;
     flex: 1;
-    padding: 3%;
+    padding: 2%;
     border-right: 2px solid white;
     border-top: 2px solid white;
-    font-size: 30px;
+    font-size: 3vh;
     font-weight: 200;
 }
 
@@ -391,7 +391,7 @@ footer a i:hover {
 a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 3vh 5vh;
 }
 
 .contact-option a:hover, .mailto:hover a{
