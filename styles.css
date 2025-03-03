@@ -52,7 +52,7 @@ body {
     letter-spacing: 0.5vh;
     padding-left: 10%;
     margin-top: 70px;
-    margin-bottom: 3px;
+    margin-bottom: 5%;
 }
 
 .portfolio-tag {
@@ -74,14 +74,14 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     margin-top: auto;
-    padding-bottom: 20px;
-    margin-left: 20px;
+    padding-bottom: 5%;
+    margin-left: 5%;
 }
 
 .number {
-    font-size: 30px;
-    margin-left: 5px;
-    padding-right: 10px;
+    font-size: 5vh;
+    margin-left: 1vw;
+    padding-right: 1vw;
     color: white;
     border-right: 1px solid white;
     font-weight: 100;
