@@ -334,6 +334,7 @@ footer a i:hover {
     display: inline;
     padding: 1vw 2vw;
     font-size: 1.1vw;
+    font-weight: 200;
 }
 
 .menu-general nav ul li a {
