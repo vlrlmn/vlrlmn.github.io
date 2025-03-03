@@ -263,6 +263,13 @@ footer a i:hover {
     transform: translateX(-100%);
     overflow: auto;
     padding: 2%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.content-panel .job 
+{
+    font-weight: 500;
 }
 
 .content-panel.active {
@@ -317,6 +324,7 @@ footer a i:hover {
     list-style-type: none;
     padding: 10%;
 }
+
 
 /*Menu general*/
 .menu-general ul {
@@ -454,7 +462,7 @@ a {
         } */
     
     .portfolio-tag {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     }
     
