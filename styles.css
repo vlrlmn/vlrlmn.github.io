@@ -229,14 +229,14 @@ footer a i:hover {
 }
 
 .me {
-    width: 30%;
+    width: 20%;
     align-self: center;
 }
 
 .me img {
-    /* margin: 2vw; */
-    /* padding: 1vw; */
-    width: 70%;
+    margin-left: 1vw;
+    padding: 1vw;
+    width: 100%;
     height: auto;
     filter: grayscale(100%) contrast(125%) brightness(115%);    
 }
@@ -249,9 +249,6 @@ footer a i:hover {
     background-color: rgb(66, 66, 66);
 }
 
-.right-content ul {
-    margin-top: 35%;
-}
 
 .content-panel {
     position: fixed;
@@ -281,10 +278,9 @@ footer a i:hover {
 }
 
 .qualifications, .skills {
-    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: 200;
     text-align:left;
-    font-size: 1.7vh;
+    font-size: 2vh;
     list-style-type: none;
     padding: 1%;
 }
@@ -294,7 +290,7 @@ footer a i:hover {
 }
 
 .summary {
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     text-align: right;
     margin-top: 3vh;
     background-color: white;
@@ -305,7 +301,7 @@ footer a i:hover {
 }
 
 .experience ul li {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     list-style-type: none;
     font-weight: 400;
 
