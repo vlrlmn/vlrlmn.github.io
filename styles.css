@@ -498,7 +498,7 @@ button {
     .filters {
         display: flex;
         justify-content: center;
-        padding-right: 10vh;
+        padding-right: 1px;
     }
 
     .menu-general ul {
