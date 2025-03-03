@@ -450,23 +450,24 @@ a {
         background-repeat: no-repeat;
         overflow: hidden;
     }
-/* 
+    /* 
     .portfolio-tag {
         font-size: 1rem;
         text-align: center;
         margin-left: 50%;
         font-weight: 300;
-    } */
+        } */
+    
     .portfolio-tag {
         font-size: 1.2rem;
         text-align: center;
     }
     
-
+        
     .menu-large ul li a {
         font-size: 1.2rem;
     }
-
+    
     .card {
         background-color: #494949;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -475,10 +476,30 @@ a {
         margin-bottom: 1vh;
         margin-left: 1vh;
     }
-
+    
     .filters {
         display: flex;
         justify-content: flex-end;
         padding-right: 10vh;
-      }
-}
+    }
+        
+    .menu-general ul {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .menu-general nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .menu-general nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        display: block;
+    }
+    }
+    
