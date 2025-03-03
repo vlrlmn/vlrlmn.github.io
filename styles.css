@@ -51,7 +51,7 @@ body {
     font-size: 7vh;
     letter-spacing: 0.5vh;
     padding-left: 10%;
-    margin-top: 70px;
+    margin-top: 7vh;
     margin-bottom: 5%;
 }
 
@@ -132,22 +132,21 @@ body {
 /* Footer */
 footer {
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 2%;
+    right: 3%;
     width: 100%;
     text-align: right;
-    padding: 10px 0;
+    padding: 2vh 0;
     z-index: 3;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
 footer a i {
-    margin-right: 5px;
+    margin-right: 3vh;
     transition: color 0.7s, transform 0.7s;
     transform: scale(1);
     cursor: url('images/cursor-4.cur'), auto; 
@@ -468,9 +467,9 @@ form {
         overflow: hidden;
     }
 
-    .left-section, .right-section {
+    /* .left-section, .right-section {
         width: 100%;
-    }
+    } */
 
     .menu-large ul li a {
         font-size: 2.5rem;
