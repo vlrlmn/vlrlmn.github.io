@@ -114,7 +114,7 @@ body {
 }
 
 .menu-large ul li {
-    padding: 2vw 0px;
+    padding: 2.4vw 0px;
 }
 
 .menu-large ul li a {
@@ -262,7 +262,7 @@ footer a i:hover {
     transform: translateX(-100%);
     overflow: auto;
     padding: 2%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
 }
 
@@ -279,7 +279,15 @@ footer a i:hover {
     transform: translateX(0);
 }
 
+#experience p, #experience ul, #experience li {
+    font-size: 1.9vh;
+}
+
 .panel-header {
+    font-size: 3vw;
+}
+
+#experience .panel-header {
     font-size: 3vw;
 }
 
@@ -306,16 +314,16 @@ footer a i:hover {
     background-color: white;
     padding: 3% 7%;
     color: #1a1a1a;
-    /* width: 0%; */
     border-top: 1px solid white;
 }
 
-.experience ul li {
+/* .experience ul li {
     font-size: 1.5rem;
     list-style-type: none;
     font-weight: 400;
 
-}
+} */
+
 
 .achievements ul li {
     font-size: 1.5vw;
@@ -338,7 +346,7 @@ footer a i:hover {
 
 .menu-general nav ul li {
     display: inline;
-    padding: 1vw;
+    padding: 1.2vw;
     font-size: 1.1vw;
     font-weight: 200;
 }
