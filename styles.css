@@ -248,7 +248,6 @@ footer a i:hover {
     background-color: rgb(66, 66, 66);
 }
 
-
 .content-panel {
     position: fixed;
     top: 0;
@@ -316,14 +315,6 @@ footer a i:hover {
     color: #1a1a1a;
     border-top: 1px solid white;
 }
-
-/* .experience ul li {
-    font-size: 1.5rem;
-    list-style-type: none;
-    font-weight: 400;
-
-} */
-
 
 .achievements ul li {
     font-size: 1.5vw;
@@ -445,7 +436,6 @@ a {
 }
 
 button {
-    /* margin-top: 5vh; */
     padding: 0.5vh 2vh;
     border: none;
     color: #ffffff;
@@ -498,14 +488,10 @@ button {
         background-color: #494949;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 98%;
-        /* padding: 2vh;
-        padding-top: 1vh; */
         margin-bottom: 1vh;
-        /* margin-left: 1vh; */
     }
 
     .filters {
-        /* display: flex; */
         justify-content: center;
         padding-right: 1px;
     }
@@ -513,7 +499,6 @@ button {
     .menu-general ul {
         width: 100%;
         text-align: left;
-        /* padding: 5px 0; */
     }
 
     .menu-general nav ul li {
